@@ -52,16 +52,10 @@ body {
   line-height: 1.14;
 }
 
-header {
-  width: 100%;
-  background: #ffffff;
-  height: 80px;
-  margin: 0 auto;
-}
 footer {
   font-weight: 400;
   background: #2f303a;
-  height: 251px;
+  height: 250px;
   width: 100%;
   margin: 0 auto;
 }
@@ -77,6 +71,9 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 .page-header {
+  width: 100%;
+  background: #ffffff;
+  height: 80px;
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -435,7 +432,7 @@ a.header-contact-details__link {
   fill: #ffffff;
   cursor: pointer;
 }
-.fifth-section {
+.customers-icons {
   margin-top: 94px;
   margin-bottom: 94px;
 }
