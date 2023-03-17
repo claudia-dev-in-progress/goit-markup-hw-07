@@ -144,10 +144,7 @@ a.header-contact-details__link:focus {
 .webstudio-footer {
   margin-bottom: 20px;
 }
-.page-header__webstudio-header {
-  align-items: center;
-  display: flex;
-}
+
 .second-section {
   padding-bottom: 94px;
   width: 100%;

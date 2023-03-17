@@ -1,3 +1,15 @@
 @import "../sass/components/logo";
 @import "../sass/components/page-header";
 @import "../sass/utils/variables";
+
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
