@@ -1,0 +1,94 @@
+@import "../utils/variables";
+
+@mixin fill-cursor {
+  fill: $color_4;
+  cursor: $maincursor;
+}
+@mixin color-cursor-hover {
+  color: $color_4;
+  cursor: $maincursor;
+}
+
+.header-contact-details__icon {
+  margin-right: 10px;
+}
+.header-border {
+  width: $mainwidth;
+  border-bottom: 1px solid $color_8;
+}
+.page-header {
+  width: $mainwidth;
+  background: $background-color_4;
+  height: 80px;
+  display: $maindisplay;
+  width: $containerwidth;
+  margin: $centerelement;
+}
+.page-header__header-navigation {
+  display: $maindisplay;
+  flex-grow: 1;
+}
+.header-navigation__list {
+  display: $maindisplay;
+  gap: 50px;
+  align-items: $mainaligning;
+  margin-left: 40px;
+}
+.navigation-list__link {
+  letter-spacing: 0.02em;
+  color: $color_2;
+  text-decoration: $maintextdecoration;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    @include color-cursor-hover;
+  }
+}
+.header-contact-details__list {
+  display: $maindisplay;
+  gap: $maingap;
+  padding-top: 20px;
+}
+.header-contact-details__link {
+  display: $maindisplay;
+  &:hover {
+    @include color-cursor-hover;
+  }
+  &:focus {
+    @include color-cursor-hover;
+  }
+}
+.navigation-list__link.activities__list {
+  @include color-cursor-hover;
+}
+a.header-contact-details__link {
+  letter-spacing: 0.02em;
+  color: $color_3;
+  text-decoration: $maintextdecoration;
+  transition: color $maintransition;
+  margin-right: 10px;
+  fill: $fill_1;
+  transition: fill $maintransition;
+  align-items: $mainaligning;
+  &:hover {
+    @include fill-cursor;
+  }
+  &:focus {
+    @include fill-cursor;
+  }
+}
+.page-header__webstudio-header {
+  color: $color_4;
+  text-decoration: $maintextdecoration;
+  font-family: $font-family_2;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.93;
+  letter-spacing: 0.03em;
+  margin-left: 23px;
+  align-items: $mainaligning;
+  display: $maindisplay;
+  &::after {
+    content: "Studio";
+    color: $color_2;
+  }
+}
