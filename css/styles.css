@@ -47,7 +47,7 @@ body {
   line-height: 1.14;
 }
 
-.page-footer {
+footer {
   font-weight: 400;
   background: #2f303a;
   height: 250px;
@@ -144,7 +144,10 @@ a.header-contact-details__link:focus {
 .webstudio-footer {
   margin-bottom: 20px;
 }
-
+.page-header__webstudio-header {
+  align-items: center;
+  display: flex;
+}
 .second-section {
   padding-bottom: 94px;
   width: 100%;

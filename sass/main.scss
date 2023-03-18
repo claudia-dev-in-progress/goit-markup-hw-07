@@ -1,7 +1,15 @@
 @import "../sass/components/logo";
 @import "../sass/components/page-header";
 @import "../sass/utils/variables";
-
+@import "../sass/components/page-footer";
+@import "../sass/components/buttons";
+@import "../sass/components/first-section";
+@import "../sass/components/modal";
+@import "../sass/components/second-section";
+@import "../sass/components/third-section";
+@import "../sass/components/forth-section";
+@import "../sass/components/customers";
+@import "../sass/components/cards";
 ul {
   list-style: none;
 }
@@ -12,4 +20,8 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }

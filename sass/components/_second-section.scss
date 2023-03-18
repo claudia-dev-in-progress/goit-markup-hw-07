@@ -1,0 +1,42 @@
+@import "../utils/variables";
+
+@mixin section-list {
+  @include flex-center;
+  gap: 30px;
+}
+.values__title {
+  font-weight: 700;
+  letter-spacing: $mainletterspacing;
+  text-transform: uppercase;
+  text-align: left;
+  color: $color_2;
+}
+
+.second-section {
+  padding-bottom: 94px;
+  width: $mainwidth;
+}
+.values__description {
+  text-align: left;
+  width: 270px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: $mainletterspacing;
+  color: $color_3;
+}
+.values__list {
+  @include section-list;
+}
+.section-icons__item {
+  background: $background-color_8;
+  border: 1px $border-color_3;
+  width: 270px;
+  height: 120px;
+  box-sizing: border-box;
+  @include flex-center;
+}
+.section-icons__list {
+  @include flex-center;
+  gap: 30px;
+}

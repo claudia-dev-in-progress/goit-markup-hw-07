@@ -1,0 +1,120 @@
+@import "../utils/variables";
+
+.footer-contact__link {
+  &:hover {
+    @include color-cursor-hover;
+  }
+  &:focus {
+    @include color-cursor-hover;
+  }
+  line-height: 1.14;
+  letter-spacing: $mainletterspacing;
+  text-decoration: none;
+  color: $color_5;
+  font-style: normal;
+  transition: color $maintransition;
+}
+#address {
+  &:hover {
+    @include color-cursor-hover;
+  }
+  &:focus {
+    @include color-cursor-hover;
+  }
+  letter-spacing: $mainletterspacing;
+  color: $color_1;
+  font-style: normal;
+  text-decoration: none;
+  transition: color $maintransition;
+}
+.page-footer {
+  font-weight: 400;
+  background: $background-color_7;
+  height: 250px;
+  width: 100%;
+  margin: $centerelement;
+}
+.footer-contact__item {
+  margin-bottom: 12px;
+}
+.footer-contact__list {
+  padding-inline-start: 0px;
+  margin-left: 23px;
+}
+
+.right-side-footer__icon-title {
+  color: $color_1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: $mainletterspacing;
+  margin-left: 45px;
+}
+.right-side-footer__icon-item {
+  @include flex-center;
+  fill: $fill_3;
+  background-color: $background-color_2;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  transition: background-color $maintransition;
+  &:hover {
+    background-color: $background-color_3;
+    cursor: $maincursor;
+  }
+}
+.right-side-footer__icon-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.footer-items {
+  padding-inline-start: 0px;
+}
+.left-side-footer {
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 50px;
+}
+.right-side-footer {
+  display: inline-block;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+.footer-form__input {
+  display: flex;
+}
+.footer-subscribe {
+  position: relative;
+  left: 600px;
+  top: -140px;
+}
+.footer-subscribe__title {
+  font-family: $font-family_3;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: $mainletterspacing;
+  text-transform: uppercase;
+  color: $color_1;
+}
+.footer-form__input-email {
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  @include border($border-color_6);
+  filter: drop-shadow(0px 4px 4px $color_9);
+  border-radius: 4px;
+  background-color: $background-color_6;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: $mainletterspacing;
+    color: $color_5;
+    position: relative;
+    left: 10px;
+    top: 3px;
+  }
+}

@@ -1,12 +1,21 @@
 @import "../utils/variables";
 
 @mixin fill-cursor {
-  fill: $color_4;
+  fill: $fill_2;
   cursor: $maincursor;
 }
 @mixin color-cursor-hover {
   color: $color_4;
   cursor: $maincursor;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+.navigation-header-contact {
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color $maintransition;
 }
 
 .header-contact-details__icon {
@@ -20,25 +29,22 @@
   width: $mainwidth;
   background: $background-color_4;
   height: 80px;
-  display: $maindisplay;
+  display: flex;
   width: $containerwidth;
   margin: $centerelement;
 }
 .page-header__header-navigation {
-  display: $maindisplay;
+  display: flex;
   flex-grow: 1;
 }
 .header-navigation__list {
-  display: $maindisplay;
+  @include flex-center;
   gap: 50px;
-  align-items: $mainaligning;
   margin-left: 40px;
 }
 .navigation-list__link {
-  letter-spacing: 0.02em;
+  @extend .navigation-header-contact
   color: $color_2;
-  text-decoration: $maintextdecoration;
-  transition: color $maintransition;
   &:focus {
     @include color-cursor-hover;
   }
@@ -47,12 +53,12 @@
   }
 }
 .header-contact-details__list {
-  display: $maindisplay;
+  display: flex;
   gap: $maingap;
   padding-top: 20px;
 }
 .header-contact-details__link {
-  display: $maindisplay;
+  display: flex;
   &:hover {
     @include color-cursor-hover;
   }
@@ -61,35 +67,17 @@
   }
 }
 a.header-contact-details__link {
-  letter-spacing: 0.02em;
+  @extend .navigation-header-contact;
   color: $color_3;
-  text-decoration: $maintextdecoration;
-  transition: color $maintransition;
   margin-right: 10px;
   fill: $fill_1;
   transition: fill $maintransition;
-  align-items: $mainaligning;
+  align-items: center;
   &:hover {
     @include fill-cursor;
   }
   &:focus {
     @include fill-cursor;
-  }
-}
-.page-header__webstudio-header {
-  color: $color_4;
-  text-decoration: $maintextdecoration;
-  font-family: $font-family_2;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.93;
-  letter-spacing: 0.03em;
-  margin-left: 23px;
-  align-items: $mainaligning;
-  display: $maindisplay;
-  &::after {
-    content: "Studio";
-    color: $color_2;
   }
 }
 
