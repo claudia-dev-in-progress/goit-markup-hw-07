@@ -43,7 +43,7 @@
   margin-left: 40px;
 }
 .navigation-list__link {
-  @extend .navigation-header-contact
+  @extend .navigation-header-contact;
   color: $color_2;
   &:focus {
     @include color-cursor-hover;
